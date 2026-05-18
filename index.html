@@ -13,74 +13,229 @@
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
   <section class="hero" id="hero">
-    <div class="container hero__inner">
-      <img src="images/logo.png" alt="Optimy – Consultoria Protheus TOTVS" class="hero__logo" />
-      <div class="hero__badge">Consultoria Protheus TOTVS #1 do Brasil</div>
-      <div class="hero__headline-wrap">
-        <h1 class="hero__headline">
-          Seu Protheus parou de crescer<br class="desktop-br" />
-          junto com a sua empresa?
-        </h1>
+
+    <!-- Elipses decorativas -->
+    <div class="hero__ellipse hero__ellipse--1" aria-hidden="true"></div>
+    <div class="hero__ellipse hero__ellipse--2" aria-hidden="true"></div>
+
+    <div class="container hero__layout">
+
+      <!-- Coluna esquerda — conteúdo -->
+      <div class="hero__content">
+        <img src="images/logo.png" alt="Optimy – Consultoria Protheus TOTVS" class="hero__logo" />
+        <div class="hero__badge">Consultoria Protheus TOTVS #1 do Brasil</div>
+        <div class="hero__headline-wrap">
+          <h1 class="hero__headline">
+            Seu Protheus parou de crescer<br class="desktop-br" />
+            junto com a sua empresa?
+          </h1>
+        </div>
+        <p class="hero__sub">
+          A Optimy transforma sistemas travados em motores de performance.<br />
+          Implantação, customização, integração e suporte — do jeito certo, na primeira vez.
+        </p>
+        <div class="hero__cta-group">
+          <a href="#formulario" class="btn btn--primary btn--lg">Quero meu Diagnóstico Gratuito</a>
+          <a href="https://wa.me/5511954245000?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20Optimy" target="_blank" rel="noopener" class="btn btn--wa-hero btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+        <p class="hero__trust">Mais de 120 empresas atendidas &bull; 15+ anos de experiência &bull; Equipe certificada TOTVS</p>
       </div>
-      <p class="hero__sub">
-        A Optimy transforma sistemas travados em motores de performance.<br />
-        Implantação, customização, integração e suporte — do jeito certo, na primeira vez.
-      </p>
-      <div class="hero__cta-group">
-        <a href="#formulario" class="btn btn--primary btn--lg">Quero meu Diagnóstico Gratuito</a>
-        <a href="https://wa.me/5511954245000?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20Optimy" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Falar no WhatsApp
-        </a>
+
+      <!-- Coluna direita — ilustração tech SVG -->
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 480 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
+          <!-- Painel principal dashboard -->
+          <rect x="60" y="40" width="340" height="220" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(245,166,35,0.25)" stroke-width="1.5"/>
+          <!-- Header bar -->
+          <rect x="60" y="40" width="340" height="38" rx="14" fill="rgba(245,166,35,0.08)"/>
+          <rect x="60" y="62" width="340" height="16" fill="rgba(245,166,35,0.08)"/>
+          <!-- Dots header -->
+          <circle cx="85" cy="59" r="5" fill="rgba(245,166,35,0.6)"/>
+          <circle cx="103" cy="59" r="5" fill="rgba(255,255,255,0.2)"/>
+          <circle cx="121" cy="59" r="5" fill="rgba(255,255,255,0.2)"/>
+          <!-- Tab labels fake -->
+          <rect x="145" y="53" width="40" height="12" rx="3" fill="rgba(245,166,35,0.15)"/>
+          <rect x="193" y="53" width="32" height="12" rx="3" fill="rgba(255,255,255,0.06)"/>
+          <!-- KPI cards inside dashboard -->
+          <rect x="80" y="94" width="88" height="52" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <rect x="88" y="104" width="28" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+          <rect x="88" y="114" width="48" height="8" rx="2" fill="rgba(245,166,35,0.7)"/>
+          <rect x="88" y="128" width="36" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+          <rect x="178" y="94" width="88" height="52" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <rect x="186" y="104" width="28" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+          <rect x="186" y="114" width="44" height="8" rx="2" fill="rgba(245,166,35,0.5)"/>
+          <rect x="186" y="128" width="32" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+          <rect x="276" y="94" width="88" height="52" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(245,166,35,0.2)" stroke-width="1"/>
+          <rect x="284" y="104" width="28" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+          <rect x="284" y="114" width="52" height="8" rx="2" fill="rgba(245,166,35,0.8)"/>
+          <text x="284" y="123" fill="rgba(245,166,35,0.9)" font-size="8" font-family="Inter,sans-serif" font-weight="700">+40%</text>
+          <rect x="284" y="128" width="40" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+          <!-- Barras do gráfico -->
+          <rect x="88"  y="185" width="18" height="55" rx="3" fill="rgba(245,166,35,0.35)"/>
+          <rect x="116" y="165" width="18" height="75" rx="3" fill="rgba(245,166,35,0.55)"/>
+          <rect x="144" y="175" width="18" height="65" rx="3" fill="rgba(245,166,35,0.3)"/>
+          <rect x="172" y="155" width="18" height="85" rx="3" fill="rgba(245,166,35,0.65)"/>
+          <rect x="200" y="168" width="18" height="72" rx="3" fill="rgba(245,166,35,0.4)"/>
+          <rect x="228" y="148" width="18" height="92" rx="3" fill="rgba(245,166,35,0.7)"/>
+          <rect x="256" y="162" width="18" height="78" rx="3" fill="rgba(245,166,35,0.45)"/>
+          <rect x="284" y="142" width="18" height="98" rx="3" fill="rgba(245,166,35,0.6)"/>
+          <rect x="312" y="158" width="18" height="82" rx="3" fill="rgba(245,166,35,0.38)"/>
+          <rect x="340" y="145" width="18" height="95" rx="3" fill="rgba(245,166,35,0.55)"/>
+          <!-- Linha de tendência -->
+          <polyline points="97,200 125,180 153,188 181,165 209,175 237,155 265,168 293,148 321,162 349,150" stroke="rgba(245,166,35,0.9)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="97"  cy="200" r="3.5" fill="#F5A623"/>
+          <circle cx="181" cy="165" r="3.5" fill="#F5A623"/>
+          <circle cx="237" cy="155" r="3.5" fill="#F5A623"/>
+          <circle cx="293" cy="148" r="3.5" fill="#F5A623"/>
+          <circle cx="349" cy="150" r="3.5" fill="#F5A623"/>
+          <!-- Mini card flutuante superior direito -->
+          <rect x="418" y="70" width="58" height="72" rx="10" fill="rgba(27,42,74,0.8)" stroke="rgba(245,166,35,0.3)" stroke-width="1"/>
+          <circle cx="447" cy="95" r="16" fill="none" stroke="rgba(245,166,35,0.2)" stroke-width="5"/>
+          <circle cx="447" cy="95" r="16" fill="none" stroke="#F5A623" stroke-width="5" stroke-dasharray="60 40" stroke-linecap="round" transform="rotate(-90 447 95)"/>
+          <rect x="428" y="116" width="38" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+          <rect x="432" y="124" width="30" height="4" rx="2" fill="rgba(245,166,35,0.5)"/>
+          <!-- Mini card flutuante inferior esquerdo -->
+          <rect x="0" y="210" width="56" height="64" rx="10" fill="rgba(27,42,74,0.8)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <rect x="10" y="222" width="20" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+          <rect x="10" y="232" width="36" height="6" rx="2" fill="rgba(245,166,35,0.6)"/>
+          <rect x="10" y="244" width="28" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="10" y="254" width="32" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+          <!-- Nós de conexão -->
+          <circle cx="240" cy="325" r="18" fill="rgba(27,42,74,0.7)" stroke="rgba(245,166,35,0.45)" stroke-width="1.5"/>
+          <circle cx="50"  cy="305" r="13" fill="rgba(27,42,74,0.6)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+          <circle cx="430" cy="295" r="13" fill="rgba(27,42,74,0.6)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+          <circle cx="450" cy="28"  r="9"  fill="rgba(245,166,35,0.12)" stroke="rgba(245,166,35,0.4)" stroke-width="1.5"/>
+          <circle cx="22"  cy="110" r="9"  fill="rgba(245,166,35,0.1)"  stroke="rgba(245,166,35,0.3)" stroke-width="1.5"/>
+          <!-- Linhas tracejadas de conexão -->
+          <line x1="240" y1="307" x2="240" y2="262" stroke="rgba(245,166,35,0.3)" stroke-width="1" stroke-dasharray="5 4"/>
+          <line x1="63"  y1="305" x2="60"  y2="265" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5 4"/>
+          <line x1="417" y1="295" x2="400" y2="265" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="5 4"/>
+          <line x1="443" y1="37"  x2="400" y2="42"  stroke="rgba(245,166,35,0.2)" stroke-width="1" stroke-dasharray="5 4"/>
+          <line x1="31"  y1="110" x2="60"  y2="100" stroke="rgba(245,166,35,0.18)" stroke-width="1" stroke-dasharray="5 4"/>
+          <!-- Pontos decorativos espalhados -->
+          <circle cx="470" cy="40"  r="3" fill="rgba(245,166,35,0.35)"/>
+          <circle cx="458" cy="56"  r="2" fill="rgba(245,166,35,0.2)"/>
+          <circle cx="14"  cy="50"  r="3" fill="rgba(245,166,35,0.3)"/>
+          <circle cx="28"  cy="68"  r="2" fill="rgba(245,166,35,0.18)"/>
+          <circle cx="14"  cy="355" r="3" fill="rgba(245,166,35,0.22)"/>
+          <circle cx="466" cy="355" r="3" fill="rgba(245,166,35,0.28)"/>
+          <circle cx="400" cy="340" r="2" fill="rgba(245,166,35,0.15)"/>
+          <circle cx="80"  cy="345" r="2" fill="rgba(245,166,35,0.15)"/>
+        </svg>
       </div>
-      <p class="hero__trust">Mais de 120 empresas atendidas &bull; 15+ anos de experiência &bull; Equipe certificada TOTVS</p>
     </div>
-    <div class="hero__bg-shape" aria-hidden="true"></div>
   </section>
 
-  <!-- PROVA SOCIAL — NÚMEROS -->
+  <!-- ══════════════════════════════════════
+       NÚMEROS
+  ══════════════════════════════════════ -->
   <section class="stats" id="numeros">
+    <!-- Padrão de pontos SVG no fundo -->
+    <div class="stats__dots" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="dot-pattern" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.5" fill="white"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#dot-pattern)"/>
+      </svg>
+    </div>
     <div class="container stats__grid">
       <div class="stats__item">
-        <span class="stats__number" data-target="120">0</span><span class="stats__suffix">+</span>
-        <span class="stats__label">Empresas Atendidas</span>
+        <div class="stats__card">
+          <div class="stats__number-row">
+            <span class="stats__number" data-target="120">0</span><span class="stats__suffix">+</span>
+          </div>
+          <span class="stats__label">Empresas Atendidas</span>
+        </div>
       </div>
       <div class="stats__item">
-        <span class="stats__number" data-target="15">0</span><span class="stats__suffix">+</span>
-        <span class="stats__label">Anos de Experiência</span>
+        <div class="stats__card">
+          <div class="stats__number-row">
+            <span class="stats__number" data-target="15">0</span><span class="stats__suffix">+</span>
+          </div>
+          <span class="stats__label">Anos de Experiência</span>
+        </div>
       </div>
       <div class="stats__item">
-        <span class="stats__number" data-target="98">0</span><span class="stats__suffix">%</span>
-        <span class="stats__label">Taxa de Satisfação</span>
+        <div class="stats__card">
+          <div class="stats__number-row">
+            <span class="stats__number" data-target="98">0</span><span class="stats__suffix">%</span>
+          </div>
+          <span class="stats__label">Taxa de Satisfação</span>
+        </div>
       </div>
       <div class="stats__item">
-        <span class="stats__number" data-target="40">0</span><span class="stats__suffix">%</span>
-        <span class="stats__label">Redução de Retrabalho</span>
+        <div class="stats__card">
+          <div class="stats__number-row">
+            <span class="stats__number" data-target="40">0</span><span class="stats__suffix">%</span>
+          </div>
+          <span class="stats__label">Redução de Retrabalho</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- LOGOS DE CLIENTES -->
+  <!-- ══════════════════════════════════════
+       CLIENTES
+  ══════════════════════════════════════ -->
   <section class="clients">
     <div class="container">
       <p class="clients__label">Empresas que confiam na Optimy</p>
       <span class="clients__sublabel">Mais de 120 empresas transformadas em todo o Brasil</span>
       <div class="clients__logos">
-        <div class="clients__logo-item">Indústria Alpha</div>
-        <div class="clients__logo-item">Grupo Beta</div>
-        <div class="clients__logo-item">Construtora Sigma</div>
-        <div class="clients__logo-item">Distribuidora Ômega</div>
-        <div class="clients__logo-item">Agro Delta</div>
-        <div class="clients__logo-item">Saúde Plus</div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Indústria Alpha
+        </div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          Grupo Beta
+        </div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Construtora Sigma
+        </div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          Distribuidora Ômega
+        </div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Agro Delta
+        </div>
+        <div class="clients__logo-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          Saúde Plus
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
+  <!-- ══════════════════════════════════════
+       SERVIÇOS
+  ══════════════════════════════════════ -->
   <section class="services" id="servicos">
-    <div class="container">
+    <!-- Padrão geométrico de fundo -->
+    <div class="services__pattern" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="diag-lines" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#diag-lines)"/>
+      </svg>
+    </div>
+    <div class="container" style="position:relative;z-index:1">
       <div class="section-header">
         <span class="section-tag">O que fazemos</span>
         <h2 class="section-title">Soluções completas em Protheus TOTVS</h2>
@@ -90,7 +245,7 @@
 
         <div class="service-card">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <h3 class="service-card__title">Implantação</h3>
           <p class="service-card__desc">Estruturamos e ativamos os módulos do Protheus com metodologia própria, reduzindo o tempo de go-live e os riscos de projeto.</p>
@@ -103,7 +258,7 @@
 
         <div class="service-card">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
           </div>
           <h3 class="service-card__title">Customização</h3>
           <p class="service-card__desc">Desenvolvemos pontos de entrada e funcionalidades sob medida em AdvPL/TLPP para adaptar o Protheus ao seu processo, não o contrário.</p>
@@ -116,7 +271,7 @@
 
         <div class="service-card">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2z"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v16h5v4l4-4h5l4-4V2z"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/></svg>
           </div>
           <h3 class="service-card__title">Migração</h3>
           <p class="service-card__desc">Migramos versões antigas do Protheus ou de outros ERPs com integridade total dos dados, zero downtime e histórico preservado.</p>
@@ -129,7 +284,7 @@
 
         <div class="service-card">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
           </div>
           <h3 class="service-card__title">Integração</h3>
           <p class="service-card__desc">Conectamos o Protheus a e-commerce, marketplaces, CRMs, sistemas fiscais e APIs externas de forma robusta e auditável.</p>
@@ -142,7 +297,7 @@
 
         <div class="service-card service-card--highlight">
           <div class="service-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
           <h3 class="service-card__title">Suporte N1, N2 e N3</h3>
           <p class="service-card__desc">Plano de suporte mensal com SLA definido, atendimento remoto e presencial, e equipe dedicada que conhece o seu ambiente.</p>
@@ -158,7 +313,16 @@
     </div>
   </section>
 
-  <!-- FORMULÁRIO -->
+  <!-- Separador onda entre serviços e formulário -->
+  <div class="wave-divider wave-divider--dark" aria-hidden="true">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,32 C240,64 480,0 720,32 C960,64 1200,0 1440,32 L1440,64 L0,64 Z" fill="#1B2A4A"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FORMULÁRIO
+  ══════════════════════════════════════ -->
   <section class="form-section" id="formulario">
     <div class="container form-section__inner">
       <div class="form-section__copy">
@@ -188,26 +352,43 @@
       <div class="form-section__card">
         <form class="lead-form" id="leadForm" novalidate>
           <h3 class="lead-form__title">Solicite agora — é gratuito</h3>
+
           <div class="form-group">
             <label for="nome" class="form-label">Seu nome *</label>
-            <input type="text" id="nome" name="nome" class="form-input" placeholder="João Silva" required autocomplete="name" />
+            <div class="input-wrapper">
+              <svg class="input-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input type="text" id="nome" name="nome" class="form-input" placeholder="João Silva" required autocomplete="name" />
+            </div>
             <span class="form-error" id="nome-error"></span>
           </div>
+
           <div class="form-group">
             <label for="empresa" class="form-label">Empresa *</label>
-            <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Empresa S.A." required autocomplete="organization" />
+            <div class="input-wrapper">
+              <svg class="input-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Empresa S.A." required autocomplete="organization" />
+            </div>
             <span class="form-error" id="empresa-error"></span>
           </div>
+
           <div class="form-group">
             <label for="email" class="form-label">E-mail corporativo *</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="joao@empresa.com.br" required autocomplete="email" />
+            <div class="input-wrapper">
+              <svg class="input-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <input type="email" id="email" name="email" class="form-input" placeholder="joao@empresa.com.br" required autocomplete="email" />
+            </div>
             <span class="form-error" id="email-error"></span>
           </div>
+
           <div class="form-group">
             <label for="whatsapp" class="form-label">WhatsApp *</label>
-            <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="(11) 99999-9999" required autocomplete="tel" maxlength="15" />
+            <div class="input-wrapper">
+              <svg class="input-icon" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="(11) 99999-9999" required autocomplete="tel" maxlength="15" />
+            </div>
             <span class="form-error" id="whatsapp-error"></span>
           </div>
+
           <button type="submit" class="btn btn--primary btn--full btn--lg">
             Quero meu Diagnóstico Gratuito
           </button>
@@ -222,7 +403,16 @@
     </div>
   </section>
 
-  <!-- DEPOIMENTOS -->
+  <!-- Separador onda entre formulário e depoimentos -->
+  <div class="wave-divider wave-divider--light" aria-hidden="true">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,32 C240,0 480,64 720,32 C960,0 1200,64 1440,32 L1440,0 L0,0 Z" fill="#1B2A4A"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       DEPOIMENTOS
+  ══════════════════════════════════════ -->
   <section class="testimonials" id="depoimentos">
     <div class="container">
       <div class="section-header">
@@ -271,8 +461,54 @@
     </div>
   </section>
 
-  <!-- CTA FINAL -->
+  <!-- ══════════════════════════════════════
+       CTA FINAL
+  ══════════════════════════════════════ -->
   <section class="final-cta">
+    <!-- Padrão de circuitos SVG no fundo -->
+    <div class="final-cta__circuit" aria-hidden="true">
+      <svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- Linhas horizontais -->
+        <line x1="0"    y1="80"  x2="1200" y2="80"  stroke="white" stroke-width="0.6"/>
+        <line x1="0"    y1="200" x2="1200" y2="200" stroke="white" stroke-width="0.6"/>
+        <line x1="0"    y1="320" x2="1200" y2="320" stroke="white" stroke-width="0.6"/>
+        <!-- Linhas verticais -->
+        <line x1="120"  y1="0"   x2="120"  y2="400" stroke="white" stroke-width="0.6"/>
+        <line x1="300"  y1="0"   x2="300"  y2="400" stroke="white" stroke-width="0.6"/>
+        <line x1="500"  y1="0"   x2="500"  y2="400" stroke="white" stroke-width="0.6"/>
+        <line x1="700"  y1="0"   x2="700"  y2="400" stroke="white" stroke-width="0.6"/>
+        <line x1="900"  y1="0"   x2="900"  y2="400" stroke="white" stroke-width="0.6"/>
+        <line x1="1080" y1="0"   x2="1080" y2="400" stroke="white" stroke-width="0.6"/>
+        <!-- Nós nos cruzamentos -->
+        <circle cx="120" cy="80"  r="5" fill="white"/>
+        <circle cx="300" cy="80"  r="3" fill="white"/>
+        <circle cx="500" cy="80"  r="5" fill="white"/>
+        <circle cx="700" cy="80"  r="3" fill="white"/>
+        <circle cx="900" cy="80"  r="5" fill="white"/>
+        <circle cx="120" cy="200" r="3" fill="white"/>
+        <circle cx="300" cy="200" r="5" fill="white"/>
+        <circle cx="500" cy="200" r="3" fill="white"/>
+        <circle cx="700" cy="200" r="5" fill="white"/>
+        <circle cx="900" cy="200" r="3" fill="white"/>
+        <circle cx="1080" cy="200" r="5" fill="white"/>
+        <circle cx="120" cy="320" r="5" fill="white"/>
+        <circle cx="500" cy="320" r="3" fill="white"/>
+        <circle cx="700" cy="320" r="5" fill="white"/>
+        <circle cx="1080" cy="320" r="3" fill="white"/>
+        <!-- Segmentos de trilha de circuito -->
+        <path d="M120,80 L120,140 L200,140 L200,200" stroke="white" stroke-width="1.2" fill="none"/>
+        <path d="M500,80 L500,140 L600,140 L600,200" stroke="white" stroke-width="1.2" fill="none"/>
+        <path d="M900,80 L900,140 L980,140 L980,200" stroke="white" stroke-width="1.2" fill="none"/>
+        <path d="M300,200 L300,260 L400,260 L400,320" stroke="white" stroke-width="1.2" fill="none"/>
+        <path d="M700,200 L700,260 L800,260 L800,320" stroke="white" stroke-width="1.2" fill="none"/>
+        <!-- Nós adicionais nas trilhas -->
+        <circle cx="200" cy="140" r="3" fill="white"/>
+        <circle cx="600" cy="140" r="3" fill="white"/>
+        <circle cx="980" cy="140" r="3" fill="white"/>
+        <circle cx="400" cy="260" r="3" fill="white"/>
+        <circle cx="800" cy="260" r="3" fill="white"/>
+      </svg>
+    </div>
     <div class="container final-cta__inner">
       <h2 class="final-cta__title">Pronto para ter o Protheus<br />trabalhando por você?</h2>
       <p class="final-cta__sub">Fale com um especialista Optimy hoje e descubra como podemos transformar o seu ERP em vantagem competitiva.</p>
@@ -286,7 +522,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__info">
       <div class="container footer__info-grid">
@@ -306,13 +544,11 @@
         </div>
       </div>
     </div>
-
     <div class="footer__disclaimer">
       <div class="container">
         <p>Protheus, ADVPL, Sigaloja e TOTVS são produtos e marca registrada de propriedade da TOTVS S.A. Logotipos TOTVS e Microsiga são de propriedade da TOTVS S.A. A OPTIMY consultoria é uma empresa de consultoria independente e não tem nenhum vínculo direto ou indireto com a TOTVS&reg;, qualquer uma de suas franquias ou qualquer um de seus representantes.</p>
       </div>
     </div>
-
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
         <img src="images/logo.png" alt="Optimy" class="footer__logo" />
