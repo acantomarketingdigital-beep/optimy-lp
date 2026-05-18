@@ -59,7 +59,7 @@ ul { list-style: none; }
 
 .btn--primary {
   background: #F5A623;
-  color: #1B2A4A;
+  color: #fff;
   border-color: #F5A623;
   box-shadow: 0 4px 16px rgba(245,166,35,0.38);
 }
@@ -77,14 +77,14 @@ ul { list-style: none; }
 }
 .btn--ghost:hover { background: rgba(255,255,255,0.08); border-color: #fff; }
 
-/* WA hero — fundo branco, texto azul */
+/* WA hero — borda laranja, texto laranja, fundo transparente */
 .btn--wa-hero {
-  background: #fff;
-  color: #1B2A4A;
-  border-color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  background: transparent;
+  color: #F5A623;
+  border-color: #F5A623;
+  box-shadow: none;
 }
-.btn--wa-hero:hover { background: #f0f4ff; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.btn--wa-hero:hover { background: rgba(245,166,35,0.06); box-shadow: 0 4px 14px rgba(245,166,35,0.2); }
 
 .btn--whatsapp {
   background: #128C7E;
@@ -122,32 +122,23 @@ ul { list-style: none; }
    ===================================================== */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #0D1B35 0%, #142240 50%, #1B2A4A 100%);
-  color: #fff;
+  background: #ffffff;
+  color: #1B2A4A;
   padding: 110px 0 90px;
   overflow: hidden;
 }
 
-/* Elipses decorativas laranja */
-.hero__ellipse {
+/* Onda SVG decorativa */
+.hero__wave {
   position: absolute;
-  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
   pointer-events: none;
+  z-index: 0;
 }
-.hero__ellipse--1 {
-  width: 700px;
-  height: 700px;
-  top: -260px;
-  right: -200px;
-  background: radial-gradient(circle, rgba(245,166,35,0.08) 0%, transparent 65%);
-}
-.hero__ellipse--2 {
-  width: 360px;
-  height: 360px;
-  bottom: -140px;
-  left: -100px;
-  background: radial-gradient(circle, rgba(245,166,35,0.06) 0%, transparent 70%);
-}
+.hero__wave svg { width: 100%; height: 100%; }
 
 /* Layout duas colunas */
 .hero__layout {
@@ -169,15 +160,16 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(245,166,35,0.12);
-  border: 1px solid rgba(245,166,35,0.35);
-  color: #F5A623;
+  background: #F5A623;
+  border: none;
+  color: #fff;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.06em;
   padding: 8px 18px;
   border-radius: 100px;
   margin-bottom: 28px;
+  box-shadow: 0 4px 14px rgba(245,166,35,0.35);
 }
 
 /* Linha vertical laranja antes da headline */
@@ -205,14 +197,14 @@ ul { list-style: none; }
 
 .hero__sub {
   font-size: clamp(1rem, 1.8vw, 1.15rem);
-  color: rgba(255,255,255,0.72);
+  color: #555555;
   max-width: 580px;
   margin-bottom: 40px;
   line-height: 1.75;
 }
 
 .hero__cta-group { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
-.hero__trust { font-size: 0.82rem; color: rgba(255,255,255,0.42); letter-spacing: 0.03em; }
+.hero__trust { font-size: 0.82rem; color: #999; letter-spacing: 0.03em; }
 .desktop-br { display: none; }
 @media (min-width: 640px) { .desktop-br { display: block; } }
 
@@ -228,14 +220,14 @@ ul { list-style: none; }
 }
 
 .hero-image {
-  width: 52%;
+  width: 55%;
   max-height: 520px;
   object-fit: contain;
   position: absolute;
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
-  filter: drop-shadow(0 24px 48px rgba(0,0,0,0.35));
+  mix-blend-mode: multiply;
   pointer-events: none;
 }
 
