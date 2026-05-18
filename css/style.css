@@ -144,7 +144,7 @@ ul { list-style: none; }
   }
 }
 
-.hero__logo { height: 52px; width: auto; margin-bottom: 36px; object-fit: contain; }
+.hero__logo { height: 104px; width: auto; margin-bottom: 36px; object-fit: contain; }
 
 .hero__badge {
   display: inline-flex;
@@ -212,7 +212,7 @@ ul { list-style: none; }
 }
 
 .hero-image {
-  width: 115%;
+  width: 230%;
   max-width: none;
   height: auto;
   object-fit: contain;
