@@ -169,3 +169,84 @@ if (form) {
     if (el) el.addEventListener('input', function () { clearError(id); });
   });
 }
+
+// ── Popup de boas-vindas (Banner 1 → Banner 2) ───────
+(function () {
+  var STORAGE_KEY = 'optimy_popup_shown';
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  var overlay = document.getElementById('popupOverlay');
+  var banner1 = document.getElementById('popupBanner1');
+  var banner2 = document.getElementById('popupBanner2');
+  var closeBtn = document.getElementById('popupClose');
+  var cta1 = document.getElementById('popupCta1');
+  var cta2 = document.getElementById('popupCta2');
+  if (!overlay || !banner1 || !banner2 || !closeBtn) return;
+
+  var switchTimer = null;
+  var autoCloseTimer = null;
+
+  function pushEvent(eventName) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: eventName });
+  }
+
+  function markShown() {
+    try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+  }
+
+  function hidePopup() {
+    clearTimeout(switchTimer);
+    clearTimeout(autoCloseTimer);
+    overlay.classList.remove('is-visible');
+    markShown();
+    setTimeout(function () { overlay.hidden = true; }, 300);
+  }
+
+  function closePopup() {
+    pushEvent('popup_close');
+    hidePopup();
+  }
+
+  function showBanner2() {
+    pushEvent('popup_view_banner2');
+    banner1.classList.add('is-leaving');
+
+    setTimeout(function () {
+      banner1.hidden = true;
+      banner1.classList.remove('is-leaving');
+      banner2.hidden = false;
+      requestAnimationFrame(function () {
+        banner2.classList.add('is-active');
+      });
+    }, 350);
+
+    autoCloseTimer = setTimeout(closePopup, 8000);
+  }
+
+  function openPopup() {
+    overlay.hidden = false;
+    requestAnimationFrame(function () {
+      overlay.classList.add('is-visible');
+    });
+    pushEvent('popup_view_banner1');
+    switchTimer = setTimeout(showBanner2, 8000);
+  }
+
+  closeBtn.addEventListener('click', closePopup);
+
+  if (cta1) {
+    cta1.addEventListener('click', function () {
+      pushEvent('popup_cta_click');
+      hidePopup();
+    });
+  }
+  if (cta2) {
+    cta2.addEventListener('click', function () {
+      pushEvent('popup_cta_click');
+      hidePopup();
+    });
+  }
+
+  setTimeout(openPopup, 1500);
+})();
