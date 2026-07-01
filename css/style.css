@@ -500,6 +500,8 @@ ul { list-style: none; }
 .form-input.is-error { border-color: #e53e3e; box-shadow: 0 0 0 3px rgba(229,62,62,0.15); }
 
 .form-error { display: block; font-size: 0.78rem; color: #e53e3e; margin-top: 5px; min-height: 16px; }
+.form-error--generic { text-align: center; margin-bottom: 10px; min-height: 0; }
+.form-error--generic:empty { margin-bottom: 0; }
 .lead-form__privacy { text-align: center; font-size: 0.78rem; color: #a0aec0; margin-top: 14px; }
 
 .form-success { text-align: center; padding: 48px 20px; }

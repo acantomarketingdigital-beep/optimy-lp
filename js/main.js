@@ -90,6 +90,8 @@ function clearError(fieldId) {
 
 function clearAllErrors() {
   ['nome', 'empresa', 'email', 'whatsapp'].forEach(clearError);
+  var genericError = document.getElementById('form-generic-error');
+  if (genericError) genericError.textContent = '';
 }
 
 function validateEmail(v) {
@@ -146,21 +148,31 @@ if (form) {
     if (!valid) return;
 
     var submitBtn = form.querySelector('button[type="submit"]');
+    var genericError = document.getElementById('form-generic-error');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Enviando...';
 
-    var msg =
-      'Olá! Vim pelo site da Optimy e gostaria de agendar um Diagnóstico Gratuito.' +
-      '%0A%0A*Nome:* ' + encodeURIComponent(nome) +
-      '%0A*Empresa:* ' + encodeURIComponent(empresa) +
-      '%0A*E-mail:* ' + encodeURIComponent(email) +
-      '%0A*WhatsApp:* ' + encodeURIComponent(document.getElementById('whatsapp').value);
-
-    setTimeout(function () {
-      form.hidden = true;
-      successBox.hidden = false;
-      window.open('https://wa.me/5511954245000?text=' + msg, '_blank');
-    }, 800);
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(form),
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) {
+          form.hidden = true;
+          successBox.hidden = false;
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Quero meu Diagnóstico Gratuito';
+          if (genericError) genericError.textContent = 'Não foi possível enviar. Tente novamente em instantes.';
+        }
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Quero meu Diagnóstico Gratuito';
+        if (genericError) genericError.textContent = 'Falha de conexão. Verifique sua internet e tente novamente.';
+      });
   });
 
   // Clear individual field errors on input
