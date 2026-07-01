@@ -160,18 +160,36 @@ if (form) {
       .then(function (res) { return res.json(); })
       .then(function (data) {
         if (data.success) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'form_submit_success',
+            form_name: 'diagnostico_gratuito',
+            form_location: window.location.pathname,
+          });
           form.hidden = true;
           successBox.hidden = false;
         } else {
           submitBtn.disabled = false;
           submitBtn.textContent = 'Quero meu Diagnóstico Gratuito';
           if (genericError) genericError.textContent = 'Não foi possível enviar. Tente novamente em instantes.';
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'form_submit_error',
+            form_name: 'diagnostico_gratuito',
+            error_detail: (data && data.message) || 'unknown_error',
+          });
         }
       })
-      .catch(function () {
+      .catch(function (err) {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Quero meu Diagnóstico Gratuito';
         if (genericError) genericError.textContent = 'Falha de conexão. Verifique sua internet e tente novamente.';
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'form_submit_error',
+          form_name: 'diagnostico_gratuito',
+          error_detail: (err && err.message) || 'network_error',
+        });
       });
   });
 
