@@ -172,9 +172,6 @@ if (form) {
 
 // ── Popup de boas-vindas (Banner 1 → Banner 2) ───────
 (function () {
-  var STORAGE_KEY = 'optimy_popup_shown';
-  if (sessionStorage.getItem(STORAGE_KEY)) return;
-
   var overlay = document.getElementById('popupOverlay');
   var banner1 = document.getElementById('popupBanner1');
   var banner2 = document.getElementById('popupBanner2');
@@ -191,15 +188,10 @@ if (form) {
     window.dataLayer.push({ event: eventName });
   }
 
-  function markShown() {
-    try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
-  }
-
   function hidePopup() {
     clearTimeout(switchTimer);
     clearTimeout(autoCloseTimer);
     overlay.classList.remove('is-visible');
-    markShown();
     setTimeout(function () { overlay.hidden = true; }, 300);
   }
 
